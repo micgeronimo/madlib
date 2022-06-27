@@ -1,13 +1,13 @@
-"""Pytest fixtures for the app."""
+"""Pytest fixtures for the api."""
 import pytest
-from app.routes import app
+from api.app import flask_app
 
 
 @pytest.fixture()
 def test_app():
     """App fixture for testing purposes."""
-    app.config.update({'TESTING': True})
-    yield app
+    flask_app.config.update({'TESTING': True})
+    yield flask_app
 
 
 @pytest.fixture()
