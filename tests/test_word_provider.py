@@ -2,8 +2,7 @@
 import requests
 import pytest
 
-from app import word_provider
-
+from api import word_provider
 
 
 def test_get_noun(mocker, mock_response):

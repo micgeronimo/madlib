@@ -9,7 +9,7 @@ def test_aggregate_data(test_client, mocker, mock_response):
     assert response.status_code == 200
 
     content = response.data.decode()
-    expected_content = 'It was a some_adjective day. I went downstairs to see if I could some_verb dinner. I asked, "Does the stew need fresh some_noun?'
+    expected_content = 'It was a some_adjective day. I went downstairs to see if I could some_verb dinner. I asked, "Does the stew need fresh some_noun?"'
     assert content == expected_content
 
 
